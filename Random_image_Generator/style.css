@@ -1,0 +1,38 @@
+
+body {
+    background-color: rgb(117, 117, 4);
+}
+
+/* Center the text input */
+#nameid {
+    display: block;
+    margin: 0 auto;
+    padding: 10px; 
+    font-size: 1em; 
+    border: 2px solid blue; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    outline: none; 
+}
+
+/* Center the button and make it slightly bigger */
+#clickButton {
+    display: block;
+    margin: 0 auto;
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    border-radius: 5px; 
+}
+
+/* Center the image */
+.imgdic {
+    text-align: center;
+}
+
+/* Style the image */
+#imgchange {
+    border-radius: 50%;
+}
