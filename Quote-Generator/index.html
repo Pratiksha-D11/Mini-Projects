@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Quote Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #quote {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #author {
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+<h1>Random Quote Generator</h1>
+<div id="quote"></div>
+<div id="author"></div>
+<button onclick="generateQuote()">Generate Quote</button>
+
+<script>
+// Array of quotes and authors
+const quotes = [
+    {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela"},
+    {quote: "The way to get started is to quit talking and begin doing.", author: "Walt Disney"},
+    {quote: "Your time is limited, don't waste it living someone else's life.", author: "Steve Jobs"},
+    {quote: "If life were predictable it would cease to be life, and be without flavor.", author: "Eleanor Roosevelt"},
+    {quote: "Life is what happens when you're busy making other plans.", author: "John Lennon"},
+    // Add more quotes as needed
+];
+
+// Function to generate a random quote
+function generateQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    document.getElementById('quote').textContent = randomQuote.quote;
+    document.getElementById('author').textContent = "-" + randomQuote.author;
+}
+
+// Generate a quote when the page loads
+window.onload = generateQuote;
+</script>
+</body>
+</html>
